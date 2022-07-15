@@ -378,26 +378,43 @@
           </button>
           <form class="form-modal">
             <h2>Оставьте свои данные, мы вам перезвоним</h2>
-            <label class="label">
-              Имя
-              <input class="input-date" type="text" name="text">
-            </label>
-            <label class="label">
-              Телефон
-              <input class="input-date" type="tel" name="tel">
-            </label>
-            <label class="label">
-              Почта
-              <input class="input-date" type="mail" name="mail">
-            </label>
+            <div class="form-box">
+              <label class="label">
+                Имя
+                <input class="input-date" type="text" name="text">
+                <svg class="svg-modal" height="18" width="18">
+                  <use href="./images/icons.svg#icon-person"></use>
+                </svg>
+              </label>
+            </div>
+            <div class="form-box">
+              <label class="label">
+                Телефон
+                <input class="input-date" type="tel" name="tel">
+                <svg class="svg-modal" height="18" width="18">
+                  <use href="./images/icons.svg#icon-phone"></use>
+                </svg>
+              </label>
+            </div>
+            <div class="form-box">
+              <label class="label">
+                Почта
+                <input class="input-date" type="mail" name="mail">
+                <svg class="svg-modal" height="18" width="18">
+                  <use href="./images/icons.svg#icon-email"></use>
+                </svg>
+              </label>
+            </div>
             <label class="label">
               Комментарий
               <textarea class="input-date" name="komments" placeholder="Введите текст"></textarea>
             </label>
-            <label class="label">
-               <input type="checkbox" name="approval">
-              Соглашаюсь с рассылкой и принимаю <a class="contract" href="" title="Ознакомится с текстом договора">Условия договора</a>
-            </label>
+            <div class="form-box">
+              <label class="label form-checkbox">
+                <input class="approval-box" type="checkbox" name="approval">
+                <span class="custum-checkbox"></span>Соглашаюсь с рассылкой и принимаю <a class="contract" href="" title="Ознакомится с текстом договора">Условия договора</a>
+              </label>
+            </div>
             <button type="submit" class="order form-button">Отправить</button>
           </form>
         </div>
@@ -457,7 +474,11 @@
           <label>
             <input class="subscription-input" type="mail" name="E-mail" placeholder="E-mail">
           </label>
-          <button class="order subscription-button" type="submit">Подписаться</button>
+          <button class="order subscription-button" type="submit">Подписаться
+            <svg class="icon-send" height="24" width="24">
+            <use href="./images/icons.svg#icon-send"></use> 
+            </svg>
+          </button>
         </form>
       </div>
     </footer>
