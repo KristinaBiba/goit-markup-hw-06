@@ -381,7 +381,7 @@
             <div class="form-box">
               <label class="label">
                 Имя
-                <input class="input-date" type="text" name="text">
+                <input class="input-date" type="text" name="text" required>
                 <svg class="svg-modal" height="18" width="18">
                   <use href="./images/icons.svg#icon-person"></use>
                 </svg>
@@ -390,7 +390,7 @@
             <div class="form-box">
               <label class="label">
                 Телефон
-                <input class="input-date" type="tel" name="tel">
+                <input class="input-date" type="tel" name="tel" required>
                 <svg class="svg-modal" height="18" width="18">
                   <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
@@ -412,7 +412,8 @@
             <div class="form-box">
               <label class="label form-checkbox">
                 <input class="approval-box" type="checkbox" name="approval">
-                <span class="custum-checkbox"></span>Соглашаюсь с рассылкой и принимаю <a class="contract" href="" title="Ознакомится с текстом договора">Условия договора</a>
+                <span class="custum-checkbox"></span>
+                <span>Соглашаюсь с рассылкой и принимаю <a class="contract" href="" title="Ознакомится с текстом договора">Условия договора</a></span>
               </label>
             </div>
             <button type="submit" class="order form-button">Отправить</button>
@@ -472,7 +473,7 @@
         <form class="subscription">
           <h2>Подпишитесь на рассылку</h2>
           <label>
-            <input class="subscription-input" type="mail" name="E-mail" placeholder="E-mail">
+            <input class="subscription-input" type="mail" name="E-mail" placeholder="E-mail" required>
           </label>
           <button class="order subscription-button" type="submit">Подписаться
             <svg class="icon-send" height="24" width="24">

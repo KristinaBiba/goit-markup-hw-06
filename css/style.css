@@ -508,6 +508,7 @@ footer {
   letter-spacing: 0.03em;
   background-color: inherit;
   color: var(--adress-text-color);
+  outline: none;
 
 }
 .icon-send {
@@ -727,20 +728,20 @@ footer {
   display: block;
 }
 .input-date {
-display: block;
-width: 100%;
-margin-bottom: 10px;
-margin-top: 4px;
-padding-left: 42px;
-padding-right: 15px;
-height: 40px;
-border: 1px solid rgba(33, 33, 33, 0.2);
-border-radius: 4px;
-outline: none;
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 4px;
+  padding-left: 42px;
+  padding-right: 15px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
 
-font-size: 12px;
-line-height: 1.17;
-color: var(--main-text-color);
+  font-size: 12px;
+  line-height: 1.17;
+  color: var(--main-text-color);
 }
 .input-date:focus {
   border-color: var(--accent-text-color);
@@ -783,8 +784,8 @@ color: var(--main-text-color);
   display: inline-block;
   width: 16px;
   height: 15px;
-  border: 2px solid var(--header-logo-color);
-  border-radius: 4px;
+  border: 2px solid var(--main-title-text-color);
+  border-radius: 2px;
   margin-right: 8px;
 }
 .approval-box:checked + .custum-checkbox {
@@ -792,14 +793,11 @@ color: var(--main-text-color);
   background-size: contain;
   background-origin: border-box;
   border-color: var(--accent-text-color);
-  background-color: var(--accent-text-color);
-}
-.approval-box:checked {
-  color: green;
 }
 .form-checkbox {
   display: inline-flex;
   align-items: center;
+  font-size: 14px;
 }
 .contract {
   color: var(--accent-text-color);
